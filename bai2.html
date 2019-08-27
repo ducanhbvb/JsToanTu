@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2</title>
+</head>
+<body>
+<form>
+    Login:<input id="login" type="text">
+    <input type="button" id="raketqua"onclick="chayNao()"value="Click Me!";>
+</form>
+<script>
+    function chayNao(){
+    let login= document.getElementById("login").value;
+    let message;
+
+    if (login == 'Employee') {
+        message = 'Hello';
+        alert("Hello");
+    } else if (login == 'Director') {
+        message = 'Greetings';
+        alert('Greetings');
+    } else if (login == ' ') {
+        message = 'No login';
+        alert('No login');
+    } else {
+        message = '';
+        alert(" ");
+    }}
+</script>
+</body>
+</html>
